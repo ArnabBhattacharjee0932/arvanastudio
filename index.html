@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARVANA STUDIO | Web Designer & Graphic Designer</title>
+  <meta name="description"
+    content="Premium portfolio of Arvana Studio - Web Design, Graphic Design, UI/UX, and Branding.">
+
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="./assets/image/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- GSAP (GreenSock) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/range.css">
+</head>
+
+<body>
+
+  <!-- Noise Texture -->
+  <div class="noise-overlay"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-text">
+      <video src="./assets/Image/Style_Ultra_realistic_AI_huma.mp4" class="w-10" autoplay muted loop></video>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/Image/logo.png" class="w-25" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="fa fa-bars text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link magnetic-trigger" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link magnetic-trigger" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link magnetic-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link magnetic-trigger" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <!-- Abstract Shapes -->
+    <div class="hero-bg-element"
+      style="top: 20%; left: 10%; width: 300px; height: 300px; background: var(--accent-color);"></div>
+    <div class="hero-bg-element" style="bottom: 10%; right: 10%; width: 400px; height: 400px; background: purple;">
+    </div>
+
+    <div class="container position-relative z-1 mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="text-accent text-uppercase mb-4 tracking-wider reveal-text">Available for selected projects —
+                2026
+              </p>
+
+              <h1 class="display-1 mb-4 text-wrap">
+                <div class="overflow-hidden"><span class="d-inline-block hero-text-anim">I DESIGN</span></div>
+                <div class="overflow-hidden"><span class="d-inline-block hero-text-anim">DIGITAL</span></div>
+                <div class="overflow-hidden"><span class="d-inline-block hero-text-anim">EXPERIENCES</span></div>
+                <div class="overflow-hidden"><span class="d-inline-block hero-text-anim color-primary">THAT GET
+                    NOTICED.</span></div>
+              </h1>
+            </div>
+            <div class="col-lg-4">
+              <img src="./assets/Image/Avater.jpg" class="w-100 magnetic-trigger rounded" alt="">
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-lg-8 mb-5">
+              <p class="text-muted-custom fs-5 reveal-element" data-aos="fade-up">I'm a multidisciplinary designer
+                creating websites,
+                brands and visual experiences for ambitious businesses and modern brands.</p>
+            </div>
+            <div class="col-lg-4">
+              <a href="#work" class="btn-custom mb-3 d-block text-center magnetic-trigger">View My Work →</a>
+              <a href="#contact" class="btn-custom mb-3 d-block text-center magnetic-trigger"
+                style="background:transparent; border:none;">Let's Talk ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator mt-5">
+      <span>Scroll to Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="section-padding border-top-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class="intro-statement mb-5 split-text" data-aos="fade-up" data-aos-duration="2000">
+            GOOD DESIGN ISN'T DECORATION.<br>
+            IT'S COMMUNICATION.
+          </h2>
+          <p class="fs-5 text-muted-custom" data-aos="fade-up" data-aos-duration="2000">
+            I combine design, technology and strategy to create digital experiences that communicate clearly, build
+            trust and make brands memorable. Every pixel has a purpose.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <img src="./assets/Image/communication.jpg" class="w-100 rounded" alt="Communication">
+        </div>
+      </div>
+  </section>
+
+  <!-- Selected Work Section -->
+  <section id="work" class="section-padding border-bottom-custom">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h2 class="display-2 mb-2" data-aos="fade-up" data-aos-duration="2000">SELECTED WORK</h2>
+          <p class="text-muted-custom" data-aos="fade-up" data-aos-duration="2000">A collection of websites, brands,
+            campaigns and visual experiences.</p>
+        </div>
+      </div>
+
+      <!-- Project 01 -->
+      <div class="project-card reveal-element">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-image-wrapper magnetic-img-trigger" data-aos="fade-up" data-aos-duration="2000">
+              <img src="./assets/Image/Barber.png" alt="Dentest Clinic" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="project-info" data-aos="fade-up" data-aos-duration="2000">
+              <span class="project-cat">Web Design / UI UX / Development</span>
+              <h3 class="display-2 mb-3">Branding Business Website</h3>
+              </p>
+              <a href="#" class="text-accent text-uppercase fw-bold magnetic-trigger">View Project ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="project-card reveal-element">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-image-wrapper magnetic-img-trigger" data-aos="fade-up" data-aos-duration="2000">
+              <img src="./assets/Image/Graphics-design.png" alt="Travel Campaign" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="project-info" data-aos="fade-up" data-aos-duration="2000">
+              <span class="project-cat">Creative Direction / Graphic Design</span>
+              <h3 class="display-2 mb-3">Creative Graphic Design</h3>
+              <a href="#" class="text-accent text-uppercase fw-bold magnetic-trigger">View Project ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="project-card reveal-element">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="project-image-wrapper magnetic-img-trigger" data-aos="fade-up" data-aos-duration="2000">
+              <img src="./assets/Image/Creative-logo.png" alt="Arvana Studio" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="project-info" data-aos="fade-up" data-aos-duration="2000">
+              <span class="project-cat">Branding / Logo Design</span>
+              <h3 class="display-2 mb-3">Branding Logo Design</h3>
+              <a href="#" class="text-accent text-uppercase fw-bold magnetic-trigger">View Project ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding border-top-custom" style="background: #faf9f9;">
+    <div class="container">
+      <h2 class="display-2 mb-5 reveal-text">WHAT I DO</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">01</span>
+            <h4 class="mb-3">Web Design</h4>
+            <p class="text-muted-custom">Modern, responsive websites designed around usability, visual impact and
+              conversion.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">02</span>
+            <h4 class="mb-3">UI / UX Design</h4>
+            <p class="text-muted-custom">Clean interfaces and intuitive user experiences for websites and digital
+              products.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">03</span>
+            <h4 class="mb-3">Graphic Design</h4>
+            <p class="text-muted-custom">Creative visual communication for campaigns, marketing and digital platforms.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">04</span>
+            <h4 class="mb-3">Branding</h4>
+            <p class="text-muted-custom">Logo design, visual identity, typography, color systems and complete brand
+              direction.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">05</span>
+            <h4 class="mb-3">Social Media</h4>
+            <p class="text-muted-custom">Eye-catching social media campaigns, advertisements and promotional graphics.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card magnetic-trigger">
+            <span class="service-num">06</span>
+            <h4 class="mb-3">Creative Direction</h4>
+            <p class="text-muted-custom">Visual concepts, campaign direction and cohesive brand storytelling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study (Featured) -->
+  <section class="section-padding border-top-custom" style="border-bottom: 1px solid rgba(110, 110, 110, 0.149);">
+    <div class="container">
+      <h2 class="display-2 mb-5 reveal-text">My Work Experience</h2>
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <h2 class="mb-5 reveal-text">With Coding</h2>
+          <div id="skills-coding-container"></div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-5 reveal-text">Without Coding</h2>
+          <div id="skills-tools-container"></div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <a href="#" class="btn-custom magnetic-trigger">Explore Case Study →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Stats -->
+  <section id="about" class="section-padding border-top-custom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="sticky-top" style="top: 100px;">
+            <div class="overflow-hidden mb-3">
+              <h2 class="display-2 reveal-text">DESIGNER.</h2>
+            </div>
+            <div class="overflow-hidden mb-3">
+              <h2 class="display-2 reveal-text">CREATOR.</h2>
+            </div>
+            <div class="overflow-hidden mb-5">
+              <h2 class="display-2 reveal-text">PROBLEM SOLVER.</h2>
+            </div>
+            <p class="text-muted-custom fs-5">
+              I'm a multidisciplinary designer passionate about transforming ideas into meaningful visual experiences. I
+              work across web design, branding, graphic design and digital marketing to help businesses communicate with
+              clarity and confidence.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <img src="assets/Image/avater-2.jpg" alt="Portrait" class="about-img mb-5 parallax-img">
+
+          <div class="row g-4">
+            <div class="col-6 stat-item">
+              <h3><span class="counter" data-target="5">0</span>+</h3>
+              <p class="text-muted-custom">Years Experience</p>
+            </div>
+            <div class="col-6 stat-item">
+              <h3><span class="counter" data-target="50">0</span>+</h3>
+              <p class="text-muted-custom">Projects Done</p>
+            </div>
+            <div class="col-6 stat-item">
+              <h3><span class="counter" data-target="30">0</span>+</h3>
+              <p class="text-muted-custom">Happy Clients</p>
+            </div>
+            <div class="col-6 stat-item">
+              <h3><span class="counter" data-target="10">0</span>+</h3>
+              <p class="text-muted-custom">Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section-padding border-top-custom" style="background: #faf9f9;">
+    <div class="container">
+      <h2 class="display-2 mb-5 reveal-text">HOW I WORK</h2>
+      <div class="row">
+        <div class="col-lg-6 project-list">
+          <div class="process-item" tabindex="0" data-image-src="./assets/Image/discover.png">
+            <h4 class="mb-2">01 — DISCOVER</h4>
+            <p class="text-muted-custom">Understand the business, audience and objectives.</p>
+          </div>
+          <div class="process-item" tabindex="0" data-image-src="./assets/Image/strategy.png">
+            <h4 class="mb-2">02 — STRATEGY</h4>
+            <p class="text-muted-custom">Define the creative direction, structure and visual language.</p>
+          </div>
+          <div class="process-item" tabindex="0" data-image-src="./assets/Image/design.png">
+            <h4 class="mb-2">03 — DESIGN</h4>
+            <p class="text-muted-custom">Create the visual system, interface and creative assets.</p>
+          </div>
+          <div class="process-item" tabindex="0" data-image-src="./assets/Image/develop.png">
+            <h4 class="mb-2">04 — DEVELOP</h4>
+            <p class="text-muted-custom">Transform the design into a responsive, high-performance website.</p>
+          </div>
+          <div class="process-item" tabindex="0" data-image-src="./assets/Image/launch.png">
+            <h4 class="mb-2">05 — LAUNCH</h4>
+            <p class="text-muted-custom">Test, refine, optimize and deliver the final experience.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 visual-area">
+          <div class="image-container">
+            <!-- Default image -->
+            <img src="./assets/Image/discover.png" alt="Project preview" class="display-image" id="target-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Marquee -->
+  <section class="marquee-section">
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span class="marquee-item">WEB DESIGN <span>✦</span></span>
+        <span class="marquee-item">UI/UX <span>✦</span></span>
+        <span class="marquee-item">FIGMA <span>✦</span></span>
+        <span class="marquee-item">PHOTOSHOP <span>✦</span></span>
+        <span class="marquee-item">BOOTSTRAP <span>✦</span></span>
+        <span class="marquee-item">BRANDING <span>✦</span></span>
+        <span class="marquee-item">HTML/CSS <span>✦</span></span>
+        <span class="marquee-item">JAVASCRIPT <span>✦</span></span>
+        <span class="marquee-item">CREATIVE DIRECTION <span>✦</span></span>
+        <!-- Duplicate for loop -->
+        <span class="marquee-item">WEB DESIGN <span>✦</span></span>
+        <span class="marquee-item">UI/UX <span>✦</span></span>
+        <span class="marquee-item">FIGMA <span>✦</span></span>
+        <span class="marquee-item">PHOTOSHOP <span>✦</span></span>
+        <span class="marquee-item">BOOTSTRAP <span>✦</span></span>
+        <span class="marquee-item">BRANDING <span>✦</span></span>
+        <span class="marquee-item">HTML/CSS <span>✦</span></span>
+        <span class="marquee-item">JAVASCRIPT <span>✦</span></span>
+        <span class="marquee-item">CREATIVE DIRECTION <span>✦</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding border-top-custom">
+    <div class="container">
+      <h2 class="display-2 mb-5">PEOPLE I'VE WORKED WITH</h2>
+      <div class="row">
+        <!-- <div class="col-lg-6 mb-5">
+          <div class="p-4" style="border: 1px solid var(--border-color);">
+            <i class="fa-solid fa-quote-left text-accent fs-3 mb-3"></i>
+            <p class="fs-5 mb-4">"Arvana transformed our brand completely. The attention to detail and creative vision
+              is unmatched in the industry."</p>
+            <div class="d-flex align-items-center">
+              <img src="https://picsum.photos/seed/p1/50/50" class="rounded-circle me-3" alt="Client">
+              <div>
+                <h6 class="mb-0">Sarah Jenkins</h6>
+                <small class="text-muted-custom">CEO, TechFlow</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-5">
+          <div class="p-4" style="border: 1px solid var(--border-color);">
+            <i class="fa-solid fa-quote-left text-accent fs-3 mb-3"></i>
+            <p class="fs-5 mb-4">"Professional, timely, and incredibly talented. The new website has increased our
+              conversions by 40%."</p>
+            <div class="d-flex align-items-center">
+              <img src="https://picsum.photos/seed/p2/50/50" class="rounded-circle me-3" alt="Client">
+              <div>
+                <h6 class="mb-0">Michael Ross</h6>
+                <small class="text-muted-custom">Director, Ross Realty</small>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-12">
+          <div class="sk-ww-google-reviews" data-embed-id="25713712"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-top border-top-custom" style="background: #faf9f9;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.2564495274405!2d88.39569387607438!3d22.829999723485777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8913af19a3c79%3A0xab5f280ee5dc1ceb!2sArvana%20Studio%20%26%20Web%20Development!5e0!3m2!1sen!2sin!4v1789674476420!5m2!1sen!2sin"
+      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding border-top-custom contact-section" style="background: #faf9f9;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-1 mb-4 reveal-text">HAVE A PROJECT<br>IN MIND?</h2>
+          <p class="fs-3 text-muted-custom mb-5">Let's turn your idea into something people remember.</p>
+
+          <a href="mailto:hello@arvana.studio" class="btn-custom btn-lg mb-5 d-inline-block magnetic-trigger"
+            style="padding: 20px 60px;">START A PROJECT ↗</a>
+
+          <div class="row mt-5">
+            <div class="col-md-3 mb-3">
+              <a href="mailto:arnabbhattacharjee330@gmail.com" class="contact-link"><i
+                  class="fa-solid fa-envelope me-2"></i> Email</a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="https://wa.link/2tyzw0" class="contact-link"><i class="fa-brands fa-whatsapp me-2"></i>
+                WhatsApp</a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="https://www.instagram.com/graphicalswitch/" class="contact-link">
+                <i class="fa-brands fa-instagram me-2"></i> Instagram
+              </a>
+            </div>
+            <div class="col-md-3 mb-3">
+              <a href="https://www.behance.net/graphicalswitch" class="contact-link">
+                <i class="fa-brands fa-behance me-2"></i> Behance
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
+          <img src="./assets/Image/logo.png" class="w-50" alt="Arvana Studio Logo">
+        </div>
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <span>Web Design • Graphic Design • Branding</span>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <p class="mb-0">© 2026 Arvana Studio. <a href="#" class="ms-2">Privacy</a> <a href="#" class="ms-2">Terms</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Custom JS -->
+<script src="./assets/js/style.js"></script>
+<script src="./assets/js/range.js"></script>
+<script src="https://widgets.sociablekit.com/google-reviews/widget.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
