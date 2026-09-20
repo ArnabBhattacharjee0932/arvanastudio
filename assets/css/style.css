@@ -524,7 +524,22 @@
         }
 
         /* --- RESPONSIVE ADJUSTMENTS --- */
-        @media (min-width: 991px) {
+        @media (min-width: 360px) {
+            .project-card:nth-child(even) .row {
+                flex-direction: row;
+            }
+            .cursor-dot, .cursor-outline {
+                display: none; /* Hide custom cursor on touch devices */
+            }
+            * { cursor: default; }
+            
+            
+            .magnetic-trigger{
+                transform: translate(0) !important;
+            }
+        }
+
+        @media (min-width: 992px) {
             .project-card:nth-child(even) .row {
                 flex-direction: row;
             }
