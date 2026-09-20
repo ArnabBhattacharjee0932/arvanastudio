@@ -533,10 +533,6 @@
             }
             * { cursor: default; }
             
-            
-            .magnetic-trigger{
-                transform: translate(0) !important;
-            }
         }
 
         @media (min-width: 992px) {
