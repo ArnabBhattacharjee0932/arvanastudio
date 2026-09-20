@@ -548,3 +548,9 @@
             }
             * { cursor: default; }
         }
+
+        @media (max-width: 991px) {
+            .magnetic-trigger{
+                transform: translate(0) !important;
+            }
+        }
