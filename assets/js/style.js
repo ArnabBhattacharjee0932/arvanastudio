@@ -11,7 +11,7 @@
                     yPercent: -100,
                     duration: 1,
                     ease: "power4.inOut",
-                    delay: 15
+                    delay: 5
                 });
                 
                 // Start Hero Animations after preloader

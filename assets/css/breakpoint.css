@@ -1,0 +1,135 @@
+@media (min-width: 360px) { 
+            .w-10{
+                width: 25% !important;
+            }
+
+            .hero-section {
+                min-height: 1261px !important;
+            }
+
+            .navbar-brand{
+                width: 50% !important;
+            }
+
+            .navbar-brand img{
+                width: 100% !important;
+            }
+
+            .hero-text-anim{
+                font-size: 3.2rem !important;
+            }
+
+            .scroll-indicator{
+               bottom: -33px !important;
+            }
+
+            .hero-para{
+               color: #2e2e2e !important;
+               margin-top: 25px;
+            }
+
+            .padding-top-0{
+               padding-top: 0;
+            }
+
+            .padding-bottom-0{
+               padding-bottom: 0;
+            }
+
+            .padding-both-0{
+               padding-top: 0;
+               padding-bottom: 0;
+            }
+         }
+
+         @media (min-width: 383px){
+            .hero-text-anim{
+                font-size: 3.5rem !important;
+            }
+
+            .hero-section {
+                min-height: 1441px !important;
+            }
+         }
+
+         @media (min-width: 486px) { 
+            .w-10{
+                width: 25% !important;
+            }
+
+            .hero-section {
+                min-height: 1530px !important;
+            }
+
+            .navbar-brand img{
+                width: 60% !important;
+            }
+         }
+
+         @media (min-width: 576px) { 
+            .w-10{
+                width: 25% !important;
+            }
+
+            .hero-section {
+                min-height: 1601px !important;
+            }
+
+            .navbar-brand{
+                width: 30% !important;
+            }
+
+            .navbar-brand img{
+                width: 100% !important;
+            }
+
+            .hero-text-anim{
+                font-size: 5rem !important;
+            }
+         }
+
+         @media (min-width: 768px) { 
+            .hero-section {
+                min-height: 1787px !important;
+            }
+
+            .w-10{
+                width: 25% !important;
+            }
+         }
+
+         @media (min-width: 991px) {
+            .w-10{
+                width: 20% !important;
+            }
+
+            .hero-section {
+                min-height: 837px !important;
+            }
+
+            .navbar-brand img{
+                width: 60% !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .w-10{
+                width: 10% !important;
+            }
+
+            .hero-section {
+                min-height: 1024px !important;
+            }
+
+            .navbar-brand img{
+                width: 30% !important;
+            }
+
+            .scroll-indicator{
+               bottom: 88px !important;
+            }
+
+            .hero-text-anim{
+                font-size: 7rem !important;
+            }
+        }
