@@ -530,7 +530,7 @@
             .cursor-dot, .cursor-outline {
                 display: none; /* Hide custom cursor on touch devices */
             }
-            * { cursor: auto; }
+            * { cursor: none; }
         }
 
         @media (min-width: 360px) and (max-width: 576px) { 
@@ -540,6 +540,14 @@
 
             .hero-section {
                 min-height: 1400px !important;
+            }
+
+            .navbar-brand{
+                width: 50% !important;
+            }
+
+            .navbar-brand img{
+                width: 100% !important;
             }
          }
 
@@ -560,6 +568,14 @@
 
             .hero-section {
                 min-height: 1547px !important;
+            }
+
+            .navbar-brand{
+                width: 30% !important;
+            }
+
+            .navbar-brand img{
+                width: 100% !important;
             }
          }
 
