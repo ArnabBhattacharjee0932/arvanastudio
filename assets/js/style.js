@@ -11,7 +11,7 @@
                     yPercent: -100,
                     duration: 1,
                     ease: "power4.inOut",
-                    delay: 5
+                    delay: 10
                 });
                 
                 // Start Hero Animations after preloader
@@ -70,21 +70,21 @@
                     duration: 1.2,
                     stagger: 0.1,
                     ease: "power4.out",
-                    delay: 0.5
+                    delay: 10.5
                 })
-                .from(".reveal-text", {
-                    y: 20,
-                    opacity: 1,
-                    duration: 0.8,
-                    stagger: 0.1,
-                    ease: "power2.out"
-                }, "-=0.8")
-                .from(".fade-up", {
-                    y: 30,
-                    opacity: 1,
-                    duration: 0.8,
-                    ease: "power2.out"
-                }, "-=0.6");
+                // .from(".reveal-text", {
+                //     y: 20,
+                //     opacity: 1,
+                //     duration: 0.8,
+                //     stagger: 0.1,
+                //     ease: "power2.out"
+                // }, "-=0.8")
+                // .from(".fade-up", {
+                //     y: 30,
+                //     opacity: 1,
+                //     duration: 0.8,
+                //     ease: "power2.out"
+                // }, "-=0.6");
             }
 
             // --- Scroll Animations (ScrollTrigger) ---
